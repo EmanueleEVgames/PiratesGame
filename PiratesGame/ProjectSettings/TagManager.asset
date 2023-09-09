@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Spikes
   layers:
   - Default
   - TransparentFX
@@ -41,6 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2934309273
+    locked: 0
   - name: Player
     uniqueID: 3915993215
+    locked: 0
+  - name: Spikes
+    uniqueID: 1250983275
+    locked: 0
+  - name: Ground
+    uniqueID: 2389752101
+    locked: 0
+  - name: Particle
+    uniqueID: 3716390281
     locked: 0
