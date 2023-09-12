@@ -7,6 +7,8 @@ public class GameControllerScript : MonoBehaviour
     Vector2 startPos;
     Rigidbody2D rigidbody2D;
 
+    bool PlayerHasKey = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,14 @@ public class GameControllerScript : MonoBehaviour
         if (collision.CompareTag("Spikes"))
         {
             PlayerDie();
+        }
+        if (collision.CompareTag("KeyDoor"))
+        {
+            PlayerHasKey = true;
+
+            Animator animator=collision.GetComponent<Animator>();
+            animator.SetBool("KeyCaptured", true);
+            Destroy(collision.gameObject,0.3f);
         }
     }
 
