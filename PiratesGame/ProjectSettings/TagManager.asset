@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spikes
   - KeyDoor
+  - Door
   layers:
   - Default
   - TransparentFX

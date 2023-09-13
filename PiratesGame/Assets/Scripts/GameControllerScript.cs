@@ -26,9 +26,19 @@ public class GameControllerScript : MonoBehaviour
         {
             PlayerHasKey = true;
 
-            Animator animator=collision.GetComponent<Animator>();
+            Animator animator = collision.GetComponent<Animator>();
             animator.SetBool("KeyCaptured", true);
-            Destroy(collision.gameObject,0.3f);
+            Destroy(collision.gameObject, 0.3f);
+        }
+
+        if (collision.CompareTag("Door"))
+        {
+            if (PlayerHasKey)
+            {
+                Animator animator = collision.GetComponent<Animator>();
+                animator.SetBool("PlayerHasKey", true);
+            }
+           
         }
     }
 
