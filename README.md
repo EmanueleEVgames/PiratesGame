@@ -1,5 +1,5 @@
-# PiratesGame
-<bold>A Pirate platform game in Unity</bold>
+# **PiratesGame**
+**A Pirate platform game in Unity**
 
 Discover hidden treasures and set your course to victory!
 
