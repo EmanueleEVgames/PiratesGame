@@ -1,4 +1,5 @@
-# PiratesGame
-Pirate platform game in UNity
+# **PiratesGame** :pirate_flag:
+**A Pirate platform game in Unity**
 
-5/9/2023 : creazione repository
+Discover hidden treasures and set your course to victory!
+
