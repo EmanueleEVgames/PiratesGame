@@ -96,7 +96,7 @@ public class PlayersMovement : MonoBehaviour
         if (_rigidbody2d.velocity.y < -0.1f)
             movementState = PlayerMovementState.Falling;
 
-        Debug.Log("STATO: " + movementState);
+        //Debug.Log("STATO: " + movementState);
         anim.SetInteger("state", (int)movementState);
 
     }

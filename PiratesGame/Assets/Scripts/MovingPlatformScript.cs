@@ -22,6 +22,7 @@ public class MovingPlatformScript : MonoBehaviour
         if (Vector2.Distance(transform.position, posA.position) < 0.05f)
         {
             targetPos = posB.position;
+            
         }
         if (Vector2.Distance(transform.position, posB.position) < 0.05f)
         {
