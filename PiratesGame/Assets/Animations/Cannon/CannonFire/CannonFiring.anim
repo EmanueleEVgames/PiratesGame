@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CannonFire
+  m_Name: CannonFiring
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,42 +21,19 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 205a69301f8859c4cbd3029b85bf7304, type: 3}
-    - time: 0.083333336
-      value: {fileID: 21300000, guid: 619fc65da01b3fa4c9e2563c66c6e59f, type: 3}
-    - time: 0.16666667
-      value: {fileID: 21300000, guid: 047b6ac2d3f5b054397f16cf8b876839, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: f96f0e3928095e2448f35bcc5bf25ccd, type: 3}
-    - time: 0.33333334
-      value: {fileID: 21300000, guid: 222b343f673514e4bbff74037a638d41, type: 3}
-    - time: 0.41666666
-      value: {fileID: 21300000, guid: 65ab7d358133926488ce5c8c6d517f7a, type: 3}
-    attribute: m_Sprite
-    path: 
-    classID: 212
-    script: {fileID: 0}
-    flags: 2
-  - serializedVersion: 2
-    curve:
-    - time: 0
-      value: {fileID: 0}
-    - time: 0.083333336
       value: {fileID: 21300000, guid: 14284d657323afe4d9ec061d350a79a9, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: c948cfbfe7477d745b3567e8792df353, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: c948cfbfe7477d745b3567e8792df353, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: c948cfbfe7477d745b3567e8792df353, type: 3}
-    - time: 0.33333334
       value: {fileID: 21300000, guid: 39e4ece24697d6643a95b70300ea594b, type: 3}
-    - time: 0.41666666
+    - time: 0.25
       value: {fileID: 21300000, guid: f70cf5bd77fd97b458f59004aef1cfc2, type: 3}
-    - time: 0.5
+    - time: 0.33333334
       value: {fileID: 21300000, guid: 00a7e661e629661459ab89f543e468af, type: 3}
-    - time: 0.5833333
+    - time: 0.41666666
       value: {fileID: 21300000, guid: 7d15f765cd383374d968678d413203a7, type: 3}
     attribute: m_Sprite
-    path: FireEffect
+    path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -76,25 +53,8 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 3072059558
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 205a69301f8859c4cbd3029b85bf7304, type: 3}
-    - {fileID: 21300000, guid: 619fc65da01b3fa4c9e2563c66c6e59f, type: 3}
-    - {fileID: 21300000, guid: 047b6ac2d3f5b054397f16cf8b876839, type: 3}
-    - {fileID: 21300000, guid: f96f0e3928095e2448f35bcc5bf25ccd, type: 3}
-    - {fileID: 21300000, guid: 222b343f673514e4bbff74037a638d41, type: 3}
-    - {fileID: 21300000, guid: 65ab7d358133926488ce5c8c6d517f7a, type: 3}
-    - {fileID: 0}
     - {fileID: 21300000, guid: 14284d657323afe4d9ec061d350a79a9, type: 3}
-    - {fileID: 21300000, guid: c948cfbfe7477d745b3567e8792df353, type: 3}
     - {fileID: 21300000, guid: c948cfbfe7477d745b3567e8792df353, type: 3}
     - {fileID: 21300000, guid: 39e4ece24697d6643a95b70300ea594b, type: 3}
     - {fileID: 21300000, guid: f70cf5bd77fd97b458f59004aef1cfc2, type: 3}
@@ -105,7 +65,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666666
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
