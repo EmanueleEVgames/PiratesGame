@@ -19,9 +19,10 @@ public class PlayerCollisionScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Spikes"))
+        if (collision.CompareTag("Spikes") || collision.CompareTag("CannonBall"))
         {
             gameControllerScript.PlayerDie();
+            
         }
         if (collision.CompareTag("KeyDoor"))
         {

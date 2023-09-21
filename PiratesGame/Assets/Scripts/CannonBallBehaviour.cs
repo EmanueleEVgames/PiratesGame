@@ -30,6 +30,37 @@ public class CannonBallBehaviour : MonoBehaviour
             rb.velocity = new Vector2(-2, 0);
         }
 
-        
+
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            // ANIMAZIONE ESPLOSIONE
+
+            // DISTRUGGI CANNONBALL
+            Destroy(rb.gameObject);
+            //StartCoroutine(DestroyBall(0.5f));
+        }
+    }
+
+
+    //IEnumerator DestroyBall(float duration)
+    //{
+    //    Destroy(rb);
+    //    //yield return true;
+    //    //rb.simulated = false;
+    //    //rb.velocity = new Vector2(0, 0);
+    //    //transform.localScale = Vector3.zero;
+    //    //yield return new WaitForSeconds(duration);
+    //    //transform.position = startPos;
+    //    //transform.localScale = Vector3.one;
+    //    //rigidbody2D.simulated = true;
+
+    //}
+
+
+
+
 }
