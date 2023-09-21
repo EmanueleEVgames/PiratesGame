@@ -16,33 +16,53 @@ public class GameControllerScript : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Spikes"))
+    //    {
+    //        PlayerDie();
+    //    }
+    //    if (collision.CompareTag("KeyDoor"))
+    //    {
+    //        PlayerHasKey = true;
+
+    //        Animator animator = collision.GetComponent<Animator>();
+    //        animator.SetBool("KeyCaptured", true);
+    //        Destroy(collision.gameObject, 0.3f);
+    //    }
+
+    //    if (collision.CompareTag("Door"))
+    //    {
+    //        if (PlayerHasKey)
+    //        {
+    //            Animator animator = collision.GetComponent<Animator>();
+    //            animator.SetBool("PlayerHasKey", true);
+    //        }
+
+    //    }
+    //}
+
+    public void KeyToPlayer(bool hasKey,Collider2D collision)
     {
-        if (collision.CompareTag("Spikes"))
-        {
-            PlayerDie();
-        }
-        if (collision.CompareTag("KeyDoor"))
+        if (hasKey)
         {
             PlayerHasKey = true;
-
             Animator animator = collision.GetComponent<Animator>();
             animator.SetBool("KeyCaptured", true);
             Destroy(collision.gameObject, 0.3f);
         }
+    }
 
-        if (collision.CompareTag("Door"))
+    public void CheckForKey(Collider2D collision)
+    {
+        if (PlayerHasKey)
         {
-            if (PlayerHasKey)
-            {
-                Animator animator = collision.GetComponent<Animator>();
-                animator.SetBool("PlayerHasKey", true);
-            }
-           
+            Animator animator = collision.GetComponent<Animator>();
+            animator.SetBool("PlayerHasKey", true);
         }
     }
 
-    void PlayerDie()
+    public void PlayerDie()
     {
         StartCoroutine(Respawn(0.5f));
     }

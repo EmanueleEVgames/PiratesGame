@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 847981484948740731, guid: e16ddf1531fa1e443b9e0795258baca6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.089199
+      value: 1.1095079
       objectReference: {fileID: 0}
     - target: {fileID: 847981484948740731, guid: e16ddf1531fa1e443b9e0795258baca6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9511914
+      value: -3.930883
       objectReference: {fileID: 0}
     - target: {fileID: 847981484948740731, guid: e16ddf1531fa1e443b9e0795258baca6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1043398859937435482, guid: e16ddf1531fa1e443b9e0795258baca6, type: 3}
       propertyPath: m_Name
-      value: EnemyCannon (1) Variant
+      value: EnemyCannonDX
       objectReference: {fileID: 0}
     - target: {fileID: 2849486757882235265, guid: e16ddf1531fa1e443b9e0795258baca6, type: 3}
       propertyPath: m_LocalPosition.x

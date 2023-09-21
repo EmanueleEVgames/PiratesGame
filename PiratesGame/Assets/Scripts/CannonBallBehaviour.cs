@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CannonBallBehaviour : MonoBehaviour
@@ -28,5 +29,7 @@ public class CannonBallBehaviour : MonoBehaviour
             //transform.position += new Vector3(transform.position.x * Time.deltaTime * -1, 0, 0);
             rb.velocity = new Vector2(-2, 0);
         }
+
+        
     }
 }

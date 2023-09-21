@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616646b0925e78442bde6c22989d52ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBetweenShoots: 2
   cannonBall: {fileID: 7796246429066351448, guid: 1702ad8bcc7147b4cae2d13e86a92d88, type: 3}
   cannonBall2: {fileID: 1060643434172521388, guid: 1702ad8bcc7147b4cae2d13e86a92d88, type: 3}
   cannonBallStartPosition: {fileID: 2849486757882235265}
@@ -132,7 +133,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &8695520591044957349
 BoxCollider2D:
   m_ObjectHideFlags: 0
