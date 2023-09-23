@@ -10,6 +10,7 @@ TagManager:
   - Background
   - Enemy
   - CannonBall
+  - Water
   layers:
   - Default
   - TransparentFX
