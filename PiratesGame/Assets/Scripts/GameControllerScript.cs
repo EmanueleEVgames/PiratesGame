@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class GameControllerScript : MonoBehaviour
 {
-    Vector2 startPos;
+
+    [SerializeField] PlayerCollisionScript playerCollisionScript;
+
+
+    Vector2 checkpointPos;
     Rigidbody2D rigidbody2D;
 
     bool PlayerHasKey = false;
@@ -12,7 +16,7 @@ public class GameControllerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPos = transform.position;
+        checkpointPos = transform.position;
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
@@ -42,7 +46,7 @@ public class GameControllerScript : MonoBehaviour
     //    }
     //}
 
-    public void KeyToPlayer(bool hasKey,Collider2D collision)
+    public void KeyToPlayer(bool hasKey, Collider2D collision)
     {
         if (hasKey)
         {
@@ -73,9 +77,14 @@ public class GameControllerScript : MonoBehaviour
         rigidbody2D.velocity = new Vector2(0, 0);
         transform.localScale = Vector3.zero;
         yield return new WaitForSeconds(duration);
-        transform.position = startPos;
+        transform.position = checkpointPos;
         transform.localScale = Vector3.one;
         rigidbody2D.simulated = true;
 
+    }
+
+    public void UpdateCheckPoint(Vector2 position)
+    {
+        checkpointPos = position;
     }
 }
