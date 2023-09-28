@@ -19,7 +19,7 @@ public class PlayerCollisionScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Spikes") || collision.CompareTag("CannonBall") || collision.CompareTag("Water"))
+        if (collision.CompareTag("Spikes") || collision.CompareTag("CannonBall") || collision.CompareTag("Water") || collision.CompareTag("Enemy"))
         {
             gameControllerScript.PlayerDie();
             
