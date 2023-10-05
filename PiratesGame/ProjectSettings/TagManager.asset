@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - CannonBall
   - Water
+  - GarbageCollect
   layers:
   - Default
   - TransparentFX
