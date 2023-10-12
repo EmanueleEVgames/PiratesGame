@@ -22,7 +22,7 @@ public class PlayerCollisionScript : MonoBehaviour
         if (collision.CompareTag("Spikes") || collision.CompareTag("CannonBall") || collision.CompareTag("Water") || collision.CompareTag("Enemy"))
         {
             gameControllerScript.PlayerDie();
-            
+
         }
         if (collision.CompareTag("KeyDoor"))
         {
@@ -44,6 +44,13 @@ public class PlayerCollisionScript : MonoBehaviour
             //}
 
         }
+
+        if (collision.CompareTag("Finish"))
+        {
+
+        }
+
+
     }
 
 
